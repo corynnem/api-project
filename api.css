@@ -1,0 +1,45 @@
+body{
+    
+background: rgb(2,0,36);
+background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(127, 4, 197) 35%, rgb(0, 0, 0) 100%);
+font-family: 'Baloo Da 2', cursive;
+
+}
+/* body {
+    background-image: url('./assets /39616.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: -3;
+    
+} */
+
+#text{
+    color: white;
+    margin: 20px;
+    z-index: 0;
+}
+
+img{
+    padding: 10px;
+    background-color: black;
+    float: right;
+    
+  
+}
+#copyright{
+    width: 12%;
+    float: right;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+ }
+#title{
+    padding: 10px;
+    /* background-color: black; */
+    width: 65%
+}
+#explanation{
+    padding: 10px;
+    /* background-color: black; */
+    width: 85%;
+}
