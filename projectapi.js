@@ -20,10 +20,16 @@ function fetchResults(e) {
       // displayResults(json);
 
       image.innerHTML = "<img src ='" + json.url + "' style = 'width: 40%'/>";
-      copyright.innerHTML = "By " + json.copyright;
+      
       title.innerHTML = json.title;
       explanation.innerHTML = json.explanation;
 
+      if(copyright.json.value === 'undefined'){
+        copyright.innerHTML = 'NASA';
+      }else{
+        copyright.innerHTML = "By " + json.copyright;
+      }
+      
     })
 
 
