@@ -10,6 +10,7 @@ let explanation = document.getElementById('explanation');
 
 function fetchResults(e) {
   console.log('hello')
+  console.log(url)
   fetch(url)
     .then(function (result) {
       console.log(result)
@@ -23,11 +24,13 @@ function fetchResults(e) {
       
       title.innerHTML = json.title;
       explanation.innerHTML = json.explanation;
-
-      if(copyright.json.value === 'undefined'){
-        copyright.innerHTML = 'NASA';
-      }else{
+      
+      console.log(json.copyright)
+      if(json.copyright !== undefined){
         copyright.innerHTML = "By " + json.copyright;
+       
+      }else{
+        copyright.innerHTML = 'NASA';
       }
       
     })
