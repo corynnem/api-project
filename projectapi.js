@@ -20,7 +20,7 @@ function fetchResults(e) {
       console.log(json);
       // displayResults(json);
 
-      image.innerHTML = "<img src ='" + json.url + "' style = 'width: 40%'/>";
+      image.innerHTML = "<img src ='" + json.url + "' style = 'width: 20vw'/>";
       
       title.innerHTML = json.title;
       explanation.innerHTML = json.explanation;
